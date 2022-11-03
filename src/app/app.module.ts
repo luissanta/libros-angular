@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { BookModule } from "./book/book.module";
 import { EditorialModule } from "./editorial/editorial.module";
 import { HttpClientModule } from "@angular/common/http";
+import { AuthorComponent } from './author/author.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,

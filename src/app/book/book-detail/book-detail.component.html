@@ -1,3 +1,8 @@
+<dt>Authors</dt>
+<dd class="caption" *ngFor="let author of bookDetail.authors">
+  {{ author.name }}
+</dd>
+
 <div class="container-fluid">
   <p class="h3 p-3">{{ bookDetail.name }}</p>
   <div class="row">
