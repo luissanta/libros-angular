@@ -1,18 +1,34 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="13"/>
+  <file path="src/app/book/book.spec.ts">
+    <testCase name="Book should create an instance" duration="1"/>
   </file>
   <file path="src/app/book/book.service.spec.ts">
-    <testCase name="BookService should be created" duration="7"/>
+    <testCase name="BookService should be created" duration="10"/>
+  </file>
+  <file path="src/app/book/book-detail/book-detail.component.spec.ts">
+    <testCase name="BookDetailComponent should create" duration="28">
+      <failure message="Error">TypeError: Cannot read properties of undefined (reading 'name')
+    at BookDetailComponent_Template (ng:///BookDetailComponent.js:51:48)
+    at executeTemplate (node_modules/@angular/core/fesm2015/core.mjs:9618:1)
+    at refreshView (node_modules/@angular/core/fesm2015/core.mjs:9484:1)
+    at refreshComponent (node_modules/@angular/core/fesm2015/core.mjs:10655:1)
+    at refreshChildComponents (node_modules/@angular/core/fesm2015/core.mjs:9280:1)
+    at refreshView (node_modules/@angular/core/fesm2015/core.mjs:9534:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/fesm2015/core.mjs:9598:1)
+    at tickRootContext (node_modules/@angular/core/fesm2015/core.mjs:10829:1)
+    at detectChangesInRootView (node_modules/@angular/core/fesm2015/core.mjs:10854:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/fesm2015/core.mjs:21451:1)
+</failure>
+    </testCase>
   </file>
   <file path="src/app/book/book-list/book-list.component.spec.ts">
-    <testCase name="BookListComponent should create" duration="50"/>
+    <testCase name="BookListComponent should create" duration="14"/>
   </file>
   <file path="src/app/editorial/editorial.spec.ts">
     <testCase name="Editorial should create an instance" duration="1"/>
   </file>
-  <file path="src/app/book/book.spec.ts">
-    <testCase name="Book should create an instance" duration="1"/>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="8"/>
+    <testCase name="AppComponent should have as title 'base-project'" duration="3"/>
   </file>
 </testExecutions>

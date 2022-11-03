@@ -12,6 +12,8 @@ export class BookListComponent implements OnInit {
   constructor(private bookService: BookService) { }
 
   books: Array<Book> = []
+  selected: boolean = false;
+  selectedBook!: Book;
 
   getBooks(): void {
     this.bookService.getBooks().subscribe((books) => {
@@ -21,5 +23,10 @@ export class BookListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getBooks()
+  }
+
+  onSelected(book: Book): void {
+    this.selected = true;
+    this.selectedBook = book;
   }
 }
