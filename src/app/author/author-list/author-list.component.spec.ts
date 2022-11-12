@@ -1,24 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientModule } from "@angular/common/http";
-import { BookListComponent } from './book-list.component';
+import {HttpClientModule} from "@angular/common/http";
+import { AuthorListComponent } from './author-list.component';
+import {AuthorService} from "../author.service";
 import {RouterTestingModule} from "@angular/router/testing";
-import {BookService} from "../book.service";
 
-describe('BookListComponent', () => {
-  let component: BookListComponent;
-  let fixture: ComponentFixture<BookListComponent>;
+describe('AuthorListComponent', () => {
+  let component: AuthorListComponent;
+  let fixture: ComponentFixture<AuthorListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HttpClientModule, RouterTestingModule],
-      declarations: [ BookListComponent ],
-      providers: [ BookService ]
+      declarations: [ AuthorListComponent ],
+      providers: [ AuthorService ]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BookListComponent);
+    fixture = TestBed.createComponent(AuthorListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,23 @@
+<dt>Authors</dt>
+
+<div class="container-fluid">
+  <p class="h3 p-3">{{ authorDetail.name }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ authorDetail.image }}"
+          alt="{{ authorDetail.name }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>ISBN</dt>
+        <dt class="bold">Description</dt>
+        <dd>{{ authorDetail.description }}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
